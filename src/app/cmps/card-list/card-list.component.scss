@@ -1,0 +1,30 @@
+.card-list {
+    display: flex;
+    gap: 1em;
+}
+.advantage-bg {
+    background-color: var(--primary-dark);
+    padding-bottom: 5%;
+}
+
+@media screen and(max-width:990px) {
+    .card-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 112px;
+    }
+ 
+}
+
+@media screen and(max-width:470px) {
+    .card-list {
+        display: flex;
+        gap: 8em;
+        flex-direction: column;
+    }
+    .advantage-bg {
+        height: unset;
+    }
+}

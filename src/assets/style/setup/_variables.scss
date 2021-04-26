@@ -1,0 +1,18 @@
+// Colors
+$primary: #08d9d6;
+$secondary: #252a34;
+$gray-font: rgba(0, 0, 0, 0.54);
+
+:root {
+    // --primary-dark: #44449d;
+    --primary-lighten: #6c6cc3;
+    --primary-dark: #478ac9;
+    --primary-lighten: #6fade7;
+    --secondary: #f09a10;
+    --secondary-light: #f5b755;
+    --secondary-svg-bg: #f9e79b;
+}
+// Breakpoints
+$mobile-breakpoint: 760px;
+$narrow-breakpoint: 960px;
+$wide-breakpoint: 1260px;

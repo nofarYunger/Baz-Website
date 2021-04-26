@@ -1,0 +1,88 @@
+@font-face {
+  font-family: heebo;
+  src: url("../../fonts/heebo/static/Heebo-Regular.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: heebo-bold;
+  src: url("../../fonts/heebo/static/Heebo-SemiBold.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: heebo-light;
+  src: url("../../fonts/heebo/static/Heebo-Light.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  user-select: none;
+  &.md-28 {
+    font-size: 28px;
+  }
+  &.md-22 {
+    font-size: 22px;
+  }
+  &.md-18 {
+    font-size: 18px;
+  }
+  &.md-dark {
+    color: black;
+    opacity: 0.54;
+  }
+  &.md-blue {
+    color: rgb(65, 148, 225);
+  }
+  &.md-light {
+    color: rgba(255, 255, 255, 1);
+  }
+  &.xl-light {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3em;
+    height: unset;
+    width: unset;
+  }
+  &.md-inactive {
+    &.md-light {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    &.md-dark {
+      color: rgba(0, 0, 0, 0.26);
+    }
+  }
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}

@@ -1,0 +1,17 @@
+.app {
+  min-height: 100vh;
+}
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 10px;
+}
+.main-layout {
+  margin: 0 5%;
+
+  @media screen and(min-width:1300px) {
+    margin: 0 10%;
+    max-width: 1240px;
+    margin: auto;
+  }
+}
