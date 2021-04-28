@@ -13,7 +13,7 @@ header {
         position: fixed;
         left: 0;
         right: 0;
-        top: -30%;
+        top: -70%;
 
         z-index: 1;
         transition: all 0.5s;
@@ -22,7 +22,12 @@ header {
             width: 100%;
             background-color: rgb(255, 255, 255);
             text-align: center;
-            padding: 25px;
+            a {
+                padding: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 
@@ -30,7 +35,7 @@ header {
         background-color: rgb(253, 253, 253);
         ul {
             opacity: 1;
-            top: 8%;
+            top: 70px;
         }
         .plach {
             position: fixed;
@@ -48,9 +53,11 @@ header {
         color: #fff;
     }
 
-    &.colored-nav {
+    &.colored-nav,
+    &.open-menu-nav {
         background-color: #fff;
         box-shadow: -1px 0px 5px 0px #c8c7c7;
+        color: black;
         .line {
             stroke: black;
         }
@@ -72,6 +79,7 @@ header {
 
     .line {
         fill: none;
+        transition: stroke 0.3s;
         stroke: white;
         stroke-width: 6;
         transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -107,13 +115,24 @@ header {
 }
 @media screen and (min-width: 990px) {
     header {
+        padding-top: 5px;
+        padding-bottom: 5px;
         .nav-container {
             flex-grow: 1;
             ul {
                 flex-direction: row;
+                opacity: 1;
+                position: unset;
                 li {
                     margin-left: 15px;
                     transition: color 0.2s;
+                    background-color: transparent;
+                    width: unset;
+                    a{
+                        padding: 0px;
+                        display: inline-block;
+                    }
+                    border: none;
                     &:hover {
                         color: var(--secondary);
                     }
@@ -126,3 +145,17 @@ header {
         }
     }
 }
+// li {
+//     border-bottom: 1px solid #a7a7a7;
+//     width: 100%;
+//     background-color: rgb(255, 255, 255);
+//     text-align: center;
+//     a {
+//         padding: 25px;
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+// }

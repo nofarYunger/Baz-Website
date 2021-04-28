@@ -38,14 +38,14 @@ export class InfoService {
 
   getCompaniesImg() {
     return [
-      { path: '../../assets/imgs/ayalon.png' },
+      { path: './assets/imgs/ayalon.png' },
       { path: 'https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.18169-9/20264692_1497520173640284_3163159117058264403_n.png?_nc_cat=111&ccb=1-3&_nc_sid=9267fe&_nc_ohc=3wlzt5N-X3UAX-oRkvs&_nc_ht=scontent.ftlv2-1.fna&oh=efb4362092af0fe2cb940e2e95606dca&oe=60ABB2A4' },
-      { path: '../../assets/imgs/clal.png' },
+      { path: './assets/imgs/clal.png' },
       { path: 'http://www.igudbit.org.il/_uploads/extraimg/btlogo.png' },
-      { path: '../../assets/imgs/haphenix.png' },
-      { path: '../../assets/imgs/harel.png' },
-      { path: '../../assets/imgs/menora.png' },
-      { path: '../../assets/imgs/migdal.png' },
+      { path: './assets/imgs/haphenix.png' },
+      { path: './assets/imgs/harel.png' },
+      { path: './assets/imgs/menora.png' },
+      { path: './assets/imgs/migdal.png' },
       { path: 'https://selam.co.il/wp-content/themes/sela/img/logos/logo1.png' },
       { path: 'https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.6435-9/101539101_266215744732517_4576659748379688960_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lzu712LuhlwAX9oKYQX&_nc_ht=scontent.ftlv2-1.fna&oh=79d6872f03904dee8f14bab5b251bac5&oe=60AC18FD' },
     ]
@@ -59,17 +59,17 @@ export class InfoService {
       },
       {
         title: 'רכב חלופי ',
-        icon: '../../../assets/imgs/icons/icon1.svg',
+        icon: './assets/imgs/icons/icon1.svg',
         description: 'איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט'
       },
       {
         title: 'המחיר הכי זול בשוק',
-        icon: '../../../assets/imgs/icons/money-bag.svg',
+        icon: './assets/imgs/icons/money-bag.svg',
         description: 'איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט'
       },
       {
         title: 'עוד משהו על ביטוח',
-        icon: '../../../assets/imgs/icons/icon1.svg',
+        icon: './assets/imgs/icons/icon1.svg',
         description: 'איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט'
       },
     ]

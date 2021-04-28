@@ -8,6 +8,7 @@ import { fromEvent } from 'rxjs';
 })
 export class AppHeaderComponent implements OnInit {
   @ViewChild('btn') menu: ElementRef<HTMLInputElement>;
+  @ViewChild('header') header: ElementRef<HTMLInputElement>;
   constructor() { }
   navBgc: String = 'transparent-nav'
   isMenuOpen: boolean = false
@@ -24,13 +25,18 @@ export class AppHeaderComponent implements OnInit {
   toggleMenu() {
     const lastState = this.isMenuOpen
     this.isMenuOpen = !lastState
+    console.log(this.menu);
+    this.menu.nativeElement.classList.toggle('opened')
+    if (this.menu.nativeElement.classList.contains('opened')) {
+      this.menu.nativeElement.setAttribute('aria-expanded', 'true')
+    } else {
+      this.menu.nativeElement.setAttribute('aria-expanded', 'false')
 
-    let btn = document.querySelector('.menu')
-    // btn.classList.toggle('opened');
-    // btn.setAttribute('aria-expanded', btn.classList.contains('opened'))
-
+    }
+    this.header.nativeElement.classList.toggle('open-menu-nav')
+    // if (!this.header.nativeElement.classList.contains('colored-nav')) {
+    //   this.header.nativeElement.classList.replace('transparent-nav','colored-nav')
+    // }
 
   }
-
-
 }
