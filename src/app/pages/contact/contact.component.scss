@@ -1,0 +1,42 @@
+.contact-page {
+position: relative;
+top: 40px;
+    // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1059%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(245%2c 183%2c 85%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c446.046C94.171%2c463.213%2c209.864%2c501.394%2c281.225%2c437.594C355.018%2c371.62%2c312.417%2c248.179%2c330.225%2c150.809C342.968%2c81.135%2c373.122%2c17.456%2c371.011%2c-53.343C368.697%2c-130.931%2c353.858%2c-206.543%2c317.524%2c-275.136C274%2c-357.301%2c232.054%2c-460.323%2c142.391%2c-484.939C52.618%2c-509.585%2c-27.475%2c-423.758%2c-115.711%2c-394.074C-199.545%2c-365.87%2c-304.422%2c-380.808%2c-363.31%2c-314.81C-422.267%2c-248.735%2c-416.632%2c-148.072%2c-414.196%2c-59.552C-412.056%2c18.204%2c-383.536%2c89.651%2c-350.246%2c159.952C-317.386%2c229.346%2c-281.705%2c297.241%2c-222.241%2c345.814C-158.002%2c398.287%2c-81.601%2c431.17%2c0%2c446.046' fill='%23f19b14'%3e%3c/path%3e%3cpath d='M1440 999.211C1528.143 1011.998 1628.252 1017.2 1699.345 963.548 1769.788 910.387 1780.776 811.0989999999999 1802.579 725.5840000000001 1821.076 653.0360000000001 1829.431 579.595 1816.02 505.937 1802.974 434.28499999999997 1766.912 372.20500000000004 1727.133 311.198 1681.595 241.35899999999998 1649.482 141.305 1567.699 125.09699999999998 1484.667 108.64100000000002 1423.23 203.834 1344.69 235.40300000000002 1276.399 262.852 1197.548 255.26600000000002 1137.604 297.973 1068.164 347.446 991.361 409.39099999999996 981.5930000000001 494.091 971.832 578.725 1044.67 647.526 1088.892 720.345 1127.945 784.652 1165.976 847.924 1224.8899999999999 894.717 1288.602 945.3199999999999 1359.48 987.53 1440 999.211' fill='%23f9d396'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1059'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row-reverse;
+
+    .content {
+        text-align: right;
+
+        input,
+        text-area {
+        text-align: right;    
+        }
+    }
+}
+.example-form {
+    background-color: rgba(255, 255, 255, 0.52);
+    padding: 2em;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+td {
+    padding-right: 8px;
+}
+
+.pattern {
+    background-image: url("../../../assets/imgs/1620310419324.png");
+    width: 40%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+}

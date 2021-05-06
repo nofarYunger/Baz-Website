@@ -12,7 +12,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { InsuranceListComponent } from './cmps/insurance-list/insurance-list.component';
 import { InsurancePreviewComponent } from './cmps/insurance-preview/insurance-preview.component';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSliderModule } from '@angular/material/slider';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { BannerComponent } from './cmps/banner/banner.component';
@@ -21,6 +20,12 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { CardListComponent } from './cmps/card-list/card-list.component';
 import { CardPreviewComponent } from './cmps/card-preview/card-preview.component';
 import { TravelComponent } from './cmps/travel/travel.component';
+import { AppFooterComponent } from './cmps/app-footer/app-footer.component';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule }   from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +42,7 @@ import { TravelComponent } from './cmps/travel/travel.component';
     CardListComponent,
     CardPreviewComponent,
     TravelComponent,
+    AppFooterComponent,
 
   ],
   imports: [
@@ -44,13 +50,16 @@ import { TravelComponent } from './cmps/travel/travel.component';
     AppRoutingModule,
     MatButtonModule,
     NoopAnimationsModule,
-    MatSliderModule,
     MatIconModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    MatInputModule,
+    FormsModule
 
   ],
 
-  providers: [],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
