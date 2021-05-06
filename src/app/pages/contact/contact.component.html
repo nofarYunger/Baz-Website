@@ -2,9 +2,9 @@
     <div class="pattern">
 
     </div>
-    <div class="content">
-        <h1>דברו איתנו</h1>
+    <div class="content flex align-center justify-center" >
         <form #form="ngForm" class="contact-form flex column" (ngSubmit)="sendEmail($event)" >
+            <h1>דברו איתנו</h1>
             <label>שם מלא</label>
             <input type="text" ngModel name="user_name">
             <label>אימייל</label>
@@ -14,15 +14,11 @@
             <label>מה תרצו להגיד לנו?</label>
             <textarea name="message" ngModel></textarea>
             <input type="submit" value="Send">
-            <button>send</button>
 
         </form>
 
 
-        <div>
-            <h1>try:</h1>
-            {{form.value|json}}
-        </div>
+        
 
     </div>
 </section>
