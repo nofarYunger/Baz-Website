@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { fromEvent } from 'rxjs';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -9,9 +11,24 @@ import { fromEvent } from 'rxjs';
 export class AppHeaderComponent implements OnInit {
   @ViewChild('btn') menu: ElementRef<HTMLInputElement>;
   @ViewChild('header') header: ElementRef<HTMLInputElement>;
-  constructor() { }
-  navBgc: String = 'transparent-nav'
-  isMenuOpen: boolean = false
+ 
+ 
+  constructor(private router: Router, private location: Location) {
+    router.events.subscribe((val) => {
+      if (location.path() === '') {
+        this.route = 'Home';
+      } else {
+        this.route = location.path()
+      }
+      console.log(this.route);
+      
+    });
+
+  }
+
+  public navBgc: String = 'transarent-nav'
+  public isMenuOpen: boolean = false
+  public route: string = "";
 
   ngOnInit(): void {
     document.addEventListener('scroll', () => {
@@ -20,8 +37,16 @@ export class AppHeaderComponent implements OnInit {
       } else {
         this.navBgc = 'transparent-nav'
       }
+
     })
+   
   }
+
+
+
+
+
+
   toggleMenu() {
     const lastState = this.isMenuOpen
     this.isMenuOpen = !lastState
@@ -34,9 +59,7 @@ export class AppHeaderComponent implements OnInit {
 
     }
     this.header.nativeElement.classList.toggle('open-menu-nav')
-    // if (!this.header.nativeElement.classList.contains('colored-nav')) {
-    //   this.header.nativeElement.classList.replace('transparent-nav','colored-nav')
-    // }
-
   }
+
+
 }
