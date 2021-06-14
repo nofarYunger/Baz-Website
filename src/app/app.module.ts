@@ -21,6 +21,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { CardListComponent } from './cmps/card-list/card-list.component';
 import { CardPreviewComponent } from './cmps/card-preview/card-preview.component';
 import { TravelComponent } from './cmps/travel/travel.component';
+import { FooterComponent } from './cmps/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { TravelComponent } from './cmps/travel/travel.component';
     CardListComponent,
     CardPreviewComponent,
     TravelComponent,
+    FooterComponent,
 
   ],
   imports: [
